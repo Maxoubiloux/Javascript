@@ -27,7 +27,9 @@ let maVariable
 # Se développer
 
 Apprendre les langages de base
+<br>
 Se spécialiser mais rester aware des autres technologies
+<br>
 Se focaliser sur des langages que l'on aime
 
 # Assignation et égalité
