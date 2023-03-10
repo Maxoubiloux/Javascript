@@ -30,7 +30,7 @@ Apprendre les langages de base
 <br>
 Se spécialiser mais rester aware des autres technologies
 <br>
-Se focaliser sur des langages que l'on aime
+Se focaliser sur des langages/technologies que l'on aime
 
 # Assignation et égalité
 
