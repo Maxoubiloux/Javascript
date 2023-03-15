@@ -1,3 +1,6 @@
+Notes
+=====
+
 # Type de casse
 
 Camel case : maVariable
