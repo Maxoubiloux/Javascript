@@ -1,7 +1,7 @@
 Notes
 =====
 
-# Type de casse
+## Type de casse
 
 Camel case : maVariable
 Pascal case : MaVariable
@@ -12,7 +12,7 @@ Pour écrire un commentaire on utilise :
 // Ceci est un commentaire
 ```
 
-# Variables
+## Variables
 
 Pour créer des variables globales, le nom des variables sont sensibles à la casse :
 
@@ -27,13 +27,13 @@ let maVariable
 ```
 **Aucun var dans le code, utiliser let et const**
 
-# Se développer
+## Se développer
 
 Apprendre les langages de base
 Se spécialiser mais rester aware des autres technologies
 Se focaliser sur des langages que l'on aime
 
-# Assignation et égalité
+## Assignation et égalité
 
 Égalité (comparaison stricte) : 
 
@@ -59,7 +59,7 @@ Supérieur ou égal/inférieur ou égal :
 >== / <==
 ```
 
-# Autres
+## Autres
 
 Parcourir le tableau rapidement :
 
@@ -82,7 +82,7 @@ setTimeout(
 1000(en ms));
 ```
 
-# Commande Git
+## Commande Git
 
 Vérifier le statut des fichiers :
 ```
