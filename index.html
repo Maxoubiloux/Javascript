@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="import" content="width=device-width, initial-scale=1">
+        <link href="style_index.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>JS</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2 class="margetitre">Site JS</h2>
+            <form class="text-center">
+                <select id="selection">
+                    <option value="0" selected>Verse 1</option>
+                    <option value="1">Verse 2</option>
+                    <option value="2">Verse 3</option>
+                </select>
+
+                <p id="verse1">Bonjour Pierre, tu as le badge PIEEEEERRE ?</p>
+                <p id="verse2">On est là non ?</p>
+                <p id="verse3">Verse 3</p>
+            </form>
+        </div>
+
+        <script>
+            const verse1 = document.getElementById("verse1");
+            const verse2 = document.getElementById("verse2");
+            const verse3 = document.getElementById("verse3");
+
+            const selection = document.getElementById("selection");
+            
+            verse2.hidden = true
+            verse3.hidden = true
+            
+            selection.addEventListener('change', () => {
+                if (selection.value === '0') {
+
+                    verse1.hidden = false
+                    verse2.hidden = true
+                    verse3.hidden = true
+
+                } else if (selection.value === '1') {
+
+                    verse1.hidden = true
+                    verse2.hidden = false
+                    verse3.hidden = true
+
+                } else if (selection.value === '2') {
+
+                    verse1.hidden = true
+                    verse2.hidden = true
+                    verse3.hidden = false
+                }
+            })
+        </script>
+
+        <script>
+            const promise = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    const randomNumber = Math.floor(Math.random() * 10);
+                    if (randomNumber % 2 === 0) {
+                        resolve(randomNumber);
+                    } else {
+                        reject(new Error('Le nombre est impair.'));
+                    }
+                }, 1000);
+            });
+            promise
+                .then(result => console.log(`Le nombre est ${result}.`))
+                .catch(error => console.error(error.message));
+        </script>
+
+        <script>
+            function fetchSomePokemons() {
+                return fetch('https://pokeapi.co/api/v2/pokemon?limit=150');
+            }
+            const pokemons = fetchSomePokemons().then((httpResponse) => {
+                console.log('httpResponse: ', httpResponse)
+                return httpResponse.json()
+            }).then((pokemonList) => {
+                console.log(pokemonList)
+            })
+        </script>
+    </body>
+</html>
